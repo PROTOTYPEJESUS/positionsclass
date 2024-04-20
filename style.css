@@ -1,0 +1,129 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* @ mayor parte del tiempo permite importar */
+
+@font-face{
+    font-family: 'fuente 1';
+    src: url('font/Louis\ George\ Cafe.ttf');
+}
+
+html{
+    width: 100%;
+    height: 100%;
+    font-family: 'fuente 1';
+    background-image: url(images/fondop.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding-top: 120px; 
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    background-color: hsla(167, 100%, 50%, 0.653);
+    align-items: center;
+    position: fixed;
+    top: 0; 
+    width: 100%;
+    z-index: 1;
+}
+
+.logo{
+    padding: 15px;
+}
+
+.logo img{
+    
+    border-radius: 50%;
+    width: 80px;
+}
+
+.contenedor{
+    max-width: 55rem;
+    width: 90%;
+    margin: 2rem auto;
+}
+
+.contenedor .fondo{
+    /*propiedad*/ background: url(images/fondo.png); /*valor*/
+    background-size: 100%;
+    width: 100%;
+    padding: 28%;
+    position: relative;
+}
+
+.contenedor .fondo .section{
+    width: 31%;
+    height: 13%;
+    border-radius: 25px;
+ /*    border: 1px solid red; */
+    position: absolute;
+}
+
+.contenedor .fondo .section.uno{
+    top: 10%;
+    left: 6%;
+}
+
+.contenedor .fondo .section.dos{
+    bottom: 64%;
+    right: 36%;
+    width: 26%;
+    height: 16%;
+}
+
+.contenedor .fondo .section.tres{
+    bottom: 70%;
+    right: 3%;
+    width: 26%;
+    height: 20%;
+}
+
+.contenedor .fondo .section.cuatro{
+    bottom: 41%;
+    right: 64%;
+    width: 23%;
+    height: 20%;
+}
+
+.contenedor .fondo .section.cinco{
+    bottom: 34%;
+    right: 10%;
+    width: 34%;
+    height: 20%;
+}
+
+.contenedor .fondo .section.seis{
+    bottom: 10%;
+    right: 60%;
+    width: 32%;
+    height: 20%;
+}
+
+.contenedor .fondo .section.siete{
+    bottom: 6%;
+    right: 5%;
+    width: 32%;
+    height: 19%;
+}
+
+
+.contenedor .ocho img{
+    position: absolute;
+    top: 58%;
+    left: 43%;
+    width: 100px;
+
+}
+
+.contenedor .fondo .section:hover{
+    background-color: rgba(68, 90, 255, 0.598);
+    transform: scaleX(1.0);
+    transition: all 100ms;
+}
+
