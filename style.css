@@ -127,3 +127,10 @@ header{
     transition: all 100ms;
 }
 
+
+.centrarimg img{
+    width: 55%;
+    border-radius: 70%;
+    display: block;
+    margin: 20px auto;
+}
